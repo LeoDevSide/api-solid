@@ -18,7 +18,7 @@ export async function register(req: FastifyRequest, res: FastifyReply) {
       password,
     })
   } catch (err) {
-    res.status(201).send()
+    res.status(409).send()
   }
 
   return res.status(201).send()
